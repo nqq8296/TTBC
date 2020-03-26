@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="Apptheme\bootstrap-4.3.1\css\bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Apptheme\font\fontawesome-pro-5.8.2-web\css\all.min.css">
+    <link rel="stylesheet" type="text/css" href="Apptheme\css\main.css">
+    <title>Đào tạo</title>
+</head>
+
+<body>
+    <header class="page_header">
+        <div class="container">
+            <div class="header_top">
+                <div class="header_tel">
+                    <span>Hotline: (+84)357.216.216</span>
+                </div>
+                <div class="change_language">
+                    <div class="language"><img class="img-fluid" src="Apptheme\images\icon_EN.png"></div>
+                    <div class="language"><img class="img-fluid" src="Apptheme\images\icon_VI.png"></div>
+                </div>
+            </div>
+            <div class="header_logo">
+                <h1 class="logo logo_small"><a href="01-homepage.html"><img src="Apptheme\images\logo.png" alt="" class="img-fluid"></a></h1>
+                <h1 class="logo logo_large"><a href="01-homepage.html"><img src="Apptheme\images\logo_2.png" alt="" class="img-fluid"></a></h1>
+                <span class="btn-expand" href="#">
+                    <i class="fal fa-bars"></i>
+                </span>
+            </div>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="01-homepage.html"><i class="fas fa-home"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="02-news.html">tin tức</i></a>
+                    <ul class="nav-sub">
+                        <li class="nav-item"><a class="nav-link" href="02-news.html">tin tức trong nước</i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="02-news.html">tin tức quốc tế</i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="02-news.html">tin tức tp hcm</i></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">thông cáo báo chí</a></li>
+                <li class="nav-item"><a class="nav-link" href="04-event.html">sự kiện</a></li>
+                <li class="nav-item"><a class="nav-link" href="05-education.html">đào tạo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">diễn đàn</a></li>
+                <li class="nav-item"><a class="nav-link" href="03-multimedia.html">multimedia</a></li>
+                <li class="nav-item nav-item-search">
+                    <div class="searchbox">
+                        <input type="text" placeholder="Tìm kiếm" id="searchbox">
+                        <span><i class="fal fa-times"></i></span>
+                    </div>
+                    <a class="nav-link" href="#"><span><i class="far fa-search"></i></span></a>
+                </li>
+            </ul>
+            <div class="header_event">
+                <div class="header_event_title">THEO DÒNG SỰ KIỆN:</div>
+                <div class="header_event_list">
+                    <div class="header_event_item"><a href="02.1-news-detail.html">Cháy công ty Rạng Đông</a></div>
+                    <div class="header_event_item"><a href="02.1-news-detail.html">Đường sắt cao tốc BN</a></div>
+                    <div class="header_event_item"><a href="02.1-news-detail.html">Đường sắt cao tốc BN</a></div>
+                    <div class="header_event_item"><a href="02.1-news-detail.html">Đường sắt cao tốc BN</a></div>
+                    <div class="header_event_item"><a href="02.1-news-detail.html">Đường sắt cao tốc BN</a></div>
+                    <div class="header_event_item"><a href="02.1-news-detail.html">Asanzo</a></div>
+                    <div class="header_event_item"><a href="02.1-news-detail.html">Asanzo</a></div>
+                    <div class="header_event_item"><a href="02.1-news-detail.html">Asanzo</a></div>
+                    <div class="header_event_item"><a href="02.1-news-detail.html">Asanzo</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="page_content">
+        <div class="container">
+            <section class="zone zone_event_calendar">
+                <div class="zone_header">
+                    <h2 class="zone_title"><a href="#">đào tạo</a></h2>
+                    <div class="event_register">
+                        <button type="button" class="btn btn-success"><i class="far fa-edit"></i> đăng kí tổ chức</button>
+                    </div>
+                </div>
+                <div class="zone_content">
+                    <div class="change_calendar">
+                        <div class="change_day">
+                            <button type="button" class="btn"><i class="fas fa-angle-left"></i></button>
+                            <button type="button" class="btn"><i class="fas fa-angle-right"></i></button>
+                        </div>
+                        <div class="day">Oct 6 – 12, 2019</div>
+                        <div class="tab">
+                            <button class="tablinks btn" onclick="openEventCalendar(event,'event_in_day')">Ngày</button>
+                            <button class="tablinks btn active" onclick="openEventCalendar(event,'event_in_week')">Tuần</button>
+                            <button class="tablinks btn" onclick="openEventCalendar(event, 'event_in_month')">Tháng</button>
+                        </div>
+                    </div>
+                    <div class="tabcontent" id="event_in_day">
+                        <table class="table table_day_event">
+                            <tbody>
+                                <tr>
+                                    <td class="event_time">08:00-10:00</td>
+                                    <td class="event_title short_class"><a href="#">TP HCM - Triển lãm "Hư cấu không thể thiếu" và "Những mối quan hệ tan vỡ"</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="event_time">10:00-12:00</td>
+                                    <td class="event_title improve_class"><a href="#">Vòng loại World Cup 2022</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="event_time">12:00-14:00</td>
+                                    <td class="event_title improve_class"><a href="#">TP HCM - Triển lãm "Hư cấu không thể thiếu" và "Những mối quan hệ tan vỡ"</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="event_time">12:00-14:00</td>
+                                    <td class="event_title long_class"><a href="#">Vòng loại World Cup 2022</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="event_time">12:00-14:00</td>
+                                    <td class="event_title long_class"><a href="#">Vòng loại World Cup 2022</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="event_time">12:00-14:00</td>
+                                    <td class="event_title long_class"><a href="#">Vòng loại World Cup 2022</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="note">
+                            <div class="note_item short_class">Đào tạo ngắn hạn</div>
+                            <div class="note_item long_class">Đào tạo dài hạn</div>
+                            <div class="note_item improve_class">Tập huấn, bổ sung kiến thức</div>
+                        </div>
+                    </div>
+                    <div class="tabcontent" id="event_in_week">
+                        <table class="table table-week-event">
+                            <tbody>
+                                <tr class="event_day">
+                                    <td>Thứ hai</td>
+                                    <td class="event_date">06/10/2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="event_time">08:00-10:00</td>
+                                    <td class="event_title short_class"><a href="#">TP HCM - Triển lãm "Hư cấu không thể thiếu" và "Những mối quan hệ tan vỡ"</a></td>
+                                </tr>
+                                <tr class="event_day">
+                                    <td>Thứ ba</td>
+                                    <td class="event_date">06/10/2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="event_time">10:00-12:00</td>
+                                    <td class="event_title improve_class"><a href="#">Vòng loại World Cup 2022</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="event_time">12:00-14:00</td>
+                                    <td class="event_title improve_class"><a href="#">TP HCM - Triển lãm "Hư cấu không thể thiếu" và "Những mối quan hệ tan vỡ"</a></td>
+                                </tr>
+                                <tr class="event_day">
+                                    <td>Thứ tư</td>
+                                    <td class="event_date">06/10/2019</td>
+                                </tr>
+                                <tr class="event_day">
+                                    <td>Thứ năm</td>
+                                    <td class="event_date">06/10/2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="event_time">12:00-14:00</td>
+                                    <td class="event_title long_class"><a href="#">Vòng loại World Cup 2022</a></td>
+                                </tr>
+                                <tr class="event_day">
+                                    <td>Thứ sáu</td>
+                                    <td class="event_date">06/10/2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="event_time">12:00-14:00</td>
+                                    <td class="event_title long_class"><a href="#">Vòng loại World Cup 2022</a></td>
+                                </tr>
+                                <tr class="event_day">
+                                    <td>Thứ bảy</td>
+                                    <td class="event_date">06/10/2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="event_time">12:00-14:00</td>
+                                    <td class="event_title long_class"><a href="#">Vòng loại World Cup 2022</a></td>
+                                </tr>
+                                <tr class="event_day">
+                                    <td>Chủ nhật</td>
+                                    <td class="event_date">06/10/2019</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="note">
+                            <div class="note_item short_class">Đào tạo ngắn hạn</div>
+                            <div class="note_item long_class">Đào tạo dài hạn</div>
+                            <div class="note_item improve_class">Tập huấn, bổ sung kiến thức</div>
+                        </div>
+                    </div>
+                    <div class="tabcontent" id="event_in_month">
+                        <div class="table_month_event">
+                            <div class="table_header">
+                                <div class="week_day">Mon</div>
+                                <div class="week_day">Tue</div>
+                                <div class="week_day">Wed</div>
+                                <div class="week_day">Thu</div>
+                                <div class="week_day">Fri</div>
+                                <div class="week_day">Sat</div>
+                                <div class="week_day">Sun</div>
+                            </div>
+                            <div class="table_content">
+                                <div class="week">
+                                    <div class="week_day">
+                                        <div class="month_day prev_month_day">1</div>
+                                        <div class="event_title short_class"><a href="#">Vòng loại World Cup 2022</a></div>
+                                        <div class="event_title short_class"><a href="#">Vòng loại World Cup 2022</a></div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day prev_month_day">2</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day prev_month_day">3</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day prev_month_day">4</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day prev_month_day">5</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day prev_month_day">6</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">7</div>
+                                    </div>
+                                </div>
+                                <div class="week">
+                                    <div class="week_day">
+                                        <div class="month_day">1</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">2</div>
+                                        <div class="event_title improve_class"><a href="#">Vòng loại World Cup 2022</a></div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">3</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">4</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">5</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">6</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">7</div>
+                                    </div>
+                                </div>
+                                <div class="week">
+                                    <div class="week_day">
+                                        <div class="month_day">1</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">2</div>
+                                        <div class="event_title long_class"><a href="#">Vòng loại World Cup 2022</a></div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">3</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">4</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">5</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">6</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">7</div>
+                                    </div>
+                                </div>
+                                <div class="week">
+                                    <div class="week_day">
+                                        <div class="month_day">1</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">2</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">3</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">4</div>
+                                        <div class="event_title long_class"><a href="#">Vòng loại World Cup 2022</a></div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">5</div>
+                                        <div class="event_title long_class"><a href="#">Vòng loại World Cup 2022</a></div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">6</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">7</div>
+                                        <div class="event_title long_class"><a href="#">Vòng loại World Cup 2022</a></div>
+                                    </div>
+                                </div>
+                                <div class="week">
+                                    <div class="week_day">
+                                        <div class="month_day">1</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">2</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">3</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">4</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">5</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">6</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">7</div>
+                                    </div>
+                                </div>
+                                <div class="week">
+                                    <div class="week_day">
+                                        <div class="month_day">1</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">2</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">3</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">4</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">5</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">6</div>
+                                    </div>
+                                    <div class="week_day">
+                                        <div class="month_day">7</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="note">
+                            <div class="note_item short_class">Đào tạo ngắn hạn</div>
+                            <div class="note_item long_class">Đào tạo dài hạn</div>
+                            <div class="note_item improve_class">Tập huấn, bổ sung kiến thức</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="zone zone_center">
+                <div class="center_box">
+                    <div class="zone_header">
+                        <h2 class="zone_title"><a href="#">sắp diễn ra</a></h2>
+                    </div>
+                    <div class="zone_content">
+                        <article class="story story_left clearfix">
+                            <figure class="story_img"><a href="#"><img src="Apptheme/images/200x150.png" class="img-fluid" alt=""></a></figure>
+                            <div class="story_header">
+                                <h3 class="story_title"><a href="#">Chủ doanh nghiệp dọa nhà báo ở Sóc Trăng: 'Tôi mất bình tĩnh'</a></h3>
+                                <div class="time">
+                                    <time>28-7-2019</time>
+                                </div>
+                            </div>
+                            <div class="story_summary">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam necessitatibus qui eum aspernatur amet dolore! Deserunt fuga consectetur itaque, id.
+                            </div>
+                        </article>
+                        <article class="story story_left clearfix">
+                            <figure class="story_img"><a href="#"><img src="Apptheme/images/200x150.png" class="img-fluid" alt=""></a></figure>
+                            <div class="story_header">
+                                <h3 class="story_title"><a href="#">Chủ doanh nghiệp dọa nhà báo ở Sóc Trăng: 'Tôi mất bình tĩnh'</a></h3>
+                                <div class="time">
+                                    <time>28-7-2019</time>
+                                </div>
+                            </div>
+                            <div class="story_summary">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam necessitatibus qui eum aspernatur amet dolore! Deserunt fuga consectetur itaque, id.
+                            </div>
+                        </article>
+                        <article class="story story_left clearfix">
+                            <figure class="story_img"><a href="#"><img src="Apptheme/images/200x150.png" class="img-fluid" alt=""></a></figure>
+                            <div class="story_header">
+                                <h3 class="story_title"><a href="#">Chủ doanh nghiệp dọa nhà báo ở Sóc Trăng: 'Tôi mất bình tĩnh'</a></h3>
+                                <div class="time">
+                                    <time>28-7-2019</time>
+                                </div>
+                            </div>
+                            <div class="story_summary">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam necessitatibus qui eum aspernatur amet dolore! Deserunt fuga consectetur itaque, id.
+                            </div>
+                        </article>
+                        <article class="story story_left clearfix">
+                            <figure class="story_img"><a href="#"><img src="Apptheme/images/200x150.png" class="img-fluid" alt=""></a></figure>
+                            <div class="story_header">
+                                <h3 class="story_title"><a href="#">Chủ doanh nghiệp dọa nhà báo ở Sóc Trăng: 'Tôi mất bình tĩnh'</a></h3>
+                                <div class="time">
+                                    <time>28-7-2019</time>
+                                </div>
+                            </div>
+                            <div class="story_summary">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam necessitatibus qui eum aspernatur amet dolore! Deserunt fuga consectetur itaque, id.
+                            </div>
+                        </article>
+                        <article class="story story_left clearfix">
+                            <figure class="story_img"><a href="#"><img src="Apptheme/images/200x150.png" class="img-fluid" alt=""></a></figure>
+                            <div class="story_header">
+                                <h3 class="story_title"><a href="#">Chủ doanh nghiệp dọa nhà báo ở Sóc Trăng: 'Tôi mất bình tĩnh'</a></h3>
+                                <div class="time">
+                                    <time>28-7-2019</time>
+                                </div>
+                            </div>
+                            <div class="story_summary">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam necessitatibus qui eum aspernatur amet dolore! Deserunt fuga consectetur itaque, id.
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="page_footer">
+        <div class="container">
+            <section class="zone zone_footer">
+                <div class="footer_info">
+                    <div class="footer_logo">
+                        <figure class="footer_logo_img"><a href="01-homepage.html"><img src="Apptheme/images/50x62.png"></a></figure>
+                        <div class="footer_logo_text">
+                            <h2 class="footer_logo_title"><a href="01-homepage.html"><span class="large_text">TRUNG TÂM BÁO CHÍ THÀNH PHỐ HỒ CHÍ MINH
+                                    </span><br><span class="small_text">HOCHIMINH CITY MEDIA CENTER (HMC)</span></a></h2>
+                        </div>
+                    </div>
+                    <div class="footer_info_content">
+                        <div class="footer_info_item">
+                            <span class="icon"><i class="far fa-building"></i></span>
+                            <span class="text">Cao ốc 255 Trần Hưng Đạo, Phường Cô Giang, Quận 1, TP.Hồ Chí Minh
+                                Building 255 Tran Hung Dao Street, Co Giang Ward, District 1, Ho Chi Minh City
+                            </span>
+                        </div>
+                        <div class="footer_info_item">
+                            <span class="icon"><i class="far fa-phone"></i></span>
+                            <span class="text">ĐT: <b>(+84-28) 22 216 216</b> - Hotline: <b>(+84) 357 216 216</b> <br>
+                                Tel: <b>(+84-28) 22 216 216</b> - Hotline:<b>(+84) 357 216 216</b>
+                            </span>
+                        </div>
+                        <div class="footer_info_item">
+                            <span class="icon"><i class="far fa-envelope"></i></span>
+                            <span class="text"><a href="#">trungtambaochi@tphcm.gov.vn</a><br><a href="#">ttbc-hcm.gov.vn</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="footer_info_other">
+                        <span>® Ghi rõ nguồn <span class="large_text">"TRUNG TÂM BÁO CHÍ THÀNH PHỐ HỒ CHÍ MINH"
+                            </span> khi phát hành lại thông tin website này</span>
+                    </div>
+                </div>
+                <div class="footer_contact">
+                    <div class="zone_header">
+                        <h2 class="zone_title"><a href="#">liên hệ</a></h2>
+                    </div>
+                    <div class="footer_contact_content clearfix">
+                        <div class="form-inline">
+                            <input type="text" name="" class="form-control" placeholder="Họ và tên">
+                            <input type="text" name="" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group mt-4">
+                            <textarea class="form-control" id="comment" rows="5" placeholder="Nhập comment ..."></textarea>
+                        </div>
+                        <button type="button" class="btn btn-success">Gửi</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <!-- =============Link JS============== -->
+    <script src="Apptheme/js/jquery.min.js"></script>
+    <script src="Apptheme/js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="Apptheme/js/ttbc.js"></script>
+</body>
+
+</html>

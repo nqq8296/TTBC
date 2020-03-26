@@ -1,0 +1,217 @@
+.story {
+    &_title {
+        margin-bottom: 0;
+        font-weight: bold;
+        @include fz-header-small;
+    }
+
+    &_summary {
+        margin: {
+            top: 0.5rem;
+        }
+
+        font-size: $summary;
+    }
+
+    &_large {
+        .story_title {
+
+            @include fz-header-large;
+        }
+
+        .story_summary {
+            font-size: 0.875rem;
+
+            @media (min-width: 768px) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &_left {
+        .story_img {
+            float: left;
+            margin-right: 1rem;
+            margin-bottom: 0;
+        }
+
+        .story_title {
+            margin-bottom: 0.5rem;
+
+            @media (min-width: 515px) {
+                margin-bottom: 1rem;
+            }
+        }
+
+        @media (max-width: 515px) {
+            img {
+                width: 120px;
+                height: 90px;
+            }
+
+            .story_summary {
+                display: none;
+            }
+        }
+    }
+
+    &_popular {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        align-items: center;
+
+        .story_numb {
+            width: 15%;
+        }
+
+        .story_header {
+            width: 80%;
+            overflow: hidden;
+        }
+    }
+
+    &_side {
+        @media (min-width: 768px) {
+            max-width: 261px;
+        }
+    }
+
+    &_media {
+        margin-bottom: 25px;
+        max-width: 254px;
+
+        @media (max-width: 424px) {
+            margin: {
+                left: auto;
+                right: auto;
+            }
+        }
+    }
+
+    &_cover {
+        position: relative;
+        margin-bottom: 25px;
+        max-width: 534px;
+        
+        .story_header {
+            position: absolute;
+            bottom: 35px;
+            left: 25px;
+            right: 25px;
+
+            .story_title {
+
+                @include fz-header-large;
+
+                a {
+
+                    color: #fff;
+
+                    &:hover {
+                        color: #0056b3;
+                    }
+                }
+            }
+        }
+
+        .story_img {
+            position: relative;
+            margin-bottom: 0;
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                bottom: 0;
+                background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.8));
+                background: -o-linear-gradient(transparent, rgba(0,0,0,0.8));
+                background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            }
+        }
+    }
+
+    &_event {
+        max-width: 364px;
+
+        margin-bottom: 1rem;
+
+        @media (max-width: 767px) {
+            margin: {
+
+                left: auto;
+                right: auto;
+            }
+        }
+
+        .story_title {
+            margin-bottom: 10px;
+        }
+    }
+
+    &_news_detail {
+        .news_title {
+            font-size: 1.25rem;
+            font-weight: bold;
+
+            @media (min-width: 768px) {
+                font-size: 1.75rem;
+            }
+        }
+
+        .news_summary {
+            @media (min-width: 768px) {
+                font-size: 18px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+
+            &.highlight {
+                color: #fff;
+                padding: 1rem 1.75rem;
+                background: $tertiary;
+            }
+        }
+
+        .author {
+            text-align: right;
+        }
+    }
+
+    &_footer {
+        margin-bottom: 2rem;
+
+        .zone_title {
+            font-size: 1rem;
+
+            a::after {
+                background: $primary;
+            }
+        }
+
+        .story {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &_video {
+        .story_title::after {
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 300;
+            content: " "
+        }
+    }
+
+    &_picture {
+
+        .story_title::after {
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 300;
+            content: " ";
+        }
+    }
+}

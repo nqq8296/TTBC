@@ -1,0 +1,57 @@
+@mixin flex-type {
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+@mixin border-dash {
+    border-bottom: 1px dashed $border-color;
+}
+
+@mixin zone-layout {
+    @media (max-width: 991px) and (min-width: 768px) {
+        margin: {
+            left: 0.5rem;
+            right: 0.5rem;
+        }
+    }
+
+    @media (min-width: 992px) {
+        margin: {
+            left: 1rem;
+            right: 1rem;
+        }
+    }
+}
+
+@mixin fz-header-large {
+    font-size: 1rem;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: 1.25rem;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 1.5rem;
+    }
+}
+
+@mixin fz-header-small {
+    font-size: 1rem;
+
+    @media (min-width: 1024px) {
+        font-size: 1.125rem;
+    }
+}
+
+@mixin circle {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    top: 6px;
+    left: -15px;
+}

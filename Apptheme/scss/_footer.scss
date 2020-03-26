@@ -1,0 +1,120 @@
+.zone_footer {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 767px) {
+        padding: {
+            left: 0;
+            right: 0;
+        }
+    }
+
+    .footer_info {
+        @media (max-width: 767px) {
+            order: 2;
+        }
+
+        @media (min-width: 768px) {
+            width: 50%;
+        }
+
+        margin-bottom: 1.5rem;
+
+        .footer_logo {
+            display: flex;
+            margin-bottom: 1rem;
+
+            &_title {
+                line-height: 0.7;
+                padding-left: 1rem;
+            }
+
+            .small_text {
+                font-size: 13px;
+                text-transform: uppercase;
+            }
+        }
+
+        .large_text {
+            font-size: 19px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #308437;
+        }
+
+
+        &_item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-left: 2.5rem;
+
+            .icon {
+                font-size: 12px;
+
+            }
+
+            .text {
+                font-size: 14px;
+                padding-left: 1rem;
+            }
+        }
+
+        &_content {
+            padding-bottom: 2rem;
+            border-bottom: 1px solid $border-color;
+        }
+
+        &_other {
+            color: #767676;
+            margin-top: 1rem;
+        }
+    }
+
+    .footer_contact {
+        width: 100%;
+        margin-bottom: 1.5rem;
+
+        @media (max-width: 767px) {
+            order: 1;
+        }
+
+        @media (min-width: 768px) {
+            width: 50%;
+            padding-left: 1.5rem;
+        }
+
+        &_content {
+            padding-top: 1.5rem;
+
+            .form-control:not(textarea) {
+                padding-bottom: 0.5rem;
+                padding-left: 0;
+                font-size: 1rem;
+                border: none;
+                border-bottom: 1px solid #ced4da;
+                width: 48%;
+
+            }
+
+            .form-control {
+                border-radius: 0;
+                box-shadow: none;
+
+                &+.form-control {
+                    margin-left: 4%;
+                }
+
+                &:focus {
+                    border-color: $primary;
+                }
+            }
+        }
+
+        .btn {
+            width: 80px;
+            float: right;
+        }
+    }
+}
